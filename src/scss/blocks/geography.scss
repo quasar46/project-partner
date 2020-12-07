@@ -1,0 +1,148 @@
+.geography {
+    margin-bottom: 95px;
+}
+
+.geography__wrapper {
+    background-image: url("../images/russia-map.png");
+    background-position: top left;
+    background-size: contain;
+}
+
+.geography__title {
+    padding: 0 200px;
+    background-color: #fff;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
+    justify-content: center;
+    span {
+        line-height: 86px;
+        height: 86px;
+        text-transform: uppercase;
+        padding-left: 23px;
+        padding-right: 98px;
+        border: 2px solid $color-blue;
+        position: relative;
+        margin-bottom: 40px;
+        &::before {
+            content: "";
+            width: 15px;
+            height: 100%;
+            background-color: $color-red;
+            position: absolute;
+            left: -17px;
+            top: 0;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 51px;
+            height: 1px;
+            background-color: $color-text;
+            top: 50%;
+            right: 20px;
+        }
+    }
+}
+
+.geography__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.geography__col {
+    &--1 {
+        max-width: 602px;
+        width: 100%;
+        flex: 1 0 auto;
+        @media (max-width: 1367px) {
+            max-width: 456px;
+        }
+    }
+    &--2 {
+        background-image: url("../images/rectangle.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        max-width: 878px;
+        flex: 1 0 auto;
+        height: 478px;
+        width: 100%;
+        margin-bottom: 218px;
+        padding-top: 54px;
+        padding-bottom: 64px;
+        padding-left: 25px;
+        padding-right: 25px;
+        @media (max-width: 1367px) {
+            max-width: 840px;
+            margin-left: -106px;
+        }
+    }
+}
+
+.geography__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    h3 {
+        font-weight: 500;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: $color-grey;
+        text-align: center;
+        .br {
+            display: block;
+        }
+        @media (max-width: 1367px) {
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 1367px) {
+        margin-left: 120px;
+    }
+}
+
+.geography__count {
+    font-family: $font-title;
+    font-weight: 500;
+    font-size: 48px;
+    color: $color-red;
+    margin-bottom: 5px;
+    margin-top: auto;
+    align-self: flex-start;
+    position: relative;
+    z-index: 10;
+    &::before {
+        content: "1 500";
+        width: 400px;
+        color: transparent;
+        font-size: 100px;
+        position: absolute;
+        font-family: $font-title;
+        left: 10px;
+        bottom: 10px;
+        -webkit-text-stroke: 1px #000;
+        z-index: -1;
+    }
+}
+
+.geography__map {
+    position: relative;
+    width: 100%;
+    margin-top: 130px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 390px;
+        height: 190px;
+        background-image: url("../images/dots-block.png");
+        background-size: cover;
+        bottom: -60px;
+        left: -100px;
+        z-index: -1;
+    }
+    @media (max-width: 1367px) {
+        margin-top: 98px;
+    }
+}

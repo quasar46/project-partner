@@ -1,0 +1,17 @@
+@import "../../node_modules/normalize.scss/normalize.scss";
+// @import "../fonts/stylesheet.scss";
+@import "variables.scss";
+@import "base.scss";
+
+@import "blocks/main-header";
+@import "blocks/main-nav";
+@import "blocks/social-list";
+@import "blocks/change-language";
+@import "blocks/buttons";
+@import "blocks/hero";
+@import "blocks/production";
+@import "blocks/about";
+@import "blocks/advantages";
+@import "blocks/geography";
+@import "blocks/main-footer";
+@import "blocks/logo";

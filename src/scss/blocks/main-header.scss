@@ -1,0 +1,22 @@
+.main-header__wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 34px;
+    padding-bottom: 39px;
+    @media (max-width: 1367px) {
+        padding-top: 27px;
+        padding-bottom: 22px;
+    }
+}
+
+.main-header__phone {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+    justify-content: center;
+    text-decoration: none;
+    color: $color-text;
+    svg {
+        margin-right: 10px;
+    }
+}

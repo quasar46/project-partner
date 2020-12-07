@@ -1,0 +1,14 @@
+.social-list {
+    margin: 0 90px;
+    display: flex;
+    align-items: center;
+    li {
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 1367px) {
+        margin: 0 25px;
+    }
+}

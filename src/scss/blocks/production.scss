@@ -1,0 +1,188 @@
+.production {
+    margin-bottom: 135px;
+}
+
+.production__content {
+    display: flex;
+    justify-content: space-between;
+    .list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        .item {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid $color-light-grey;
+            padding: 40px;
+            padding-top: 64px;
+            margin-bottom: 30px;
+            width: 28%;
+            background-color: #fff;
+            z-index: 10;
+            .item__content {
+                margin-bottom: 25px;
+                picture {
+                    height: 89px;
+                    display: flex;
+                    padding-bottom: 15px;
+                    margin-bottom: 15px;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 60px;
+                        height: 2px;
+                        background-color: #989898;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+                .title {
+                    font-weight: 400;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    @media (max-width: 1367px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .button1 {
+                align-self: flex-end;
+                @media (max-width: 1367px) {
+                    align-self: flex-start;
+                }
+            }
+            // hover cart
+            &:hover {
+                background-position: 90% 90%;
+                background-repeat: no-repeat;
+                background-color: rgba(1, 1, 1, 0.5);
+                .button1 {
+                    a {
+                        // border: 2px solid #fff;
+                        // color: #fff;
+                        // background-color: transparent;
+                        background: linear-gradient(
+                            45deg,
+                            transparent 0%,
+                            transparent calc(100% - 10px),
+                            #fff calc(100% - 10px)
+                        );
+                        background-origin: border-box;
+                        padding: 15px 25px;
+                        border-width: 2px;
+                        border-color: #fff;
+                        border-style: solid;
+                        border-bottom-color: transparent;
+                        border-left-color: transparent;
+                        position: relative;
+                        color: #fff;
+                        &::before {
+                            background-color: transparent;
+                        }
+                        &::after {
+                            background-color: transparent;
+                        }
+                    }
+                }
+                .item__content {
+                    picture {
+                        &::before {
+                            background-color: #fff;
+                        }
+                        svg {
+                            path {
+                                fill: #fff;
+                            }
+                        }
+                    }
+                    .title {
+                        color: #fff;
+                    }
+                }
+            }
+            // end hover cart
+            &--1 {
+                &:hover {
+                    background-image: url("../images/production/hover/bg1-hover.png");
+                }
+            }
+            &--2 {
+                &:hover {
+                    background-image: url("../images/production/hover/bg2-hover.png");
+                }
+            }
+            &--3 {
+                &:hover {
+                    background-image: url("../images/production/hover/bg3-hover.png");
+                }
+            }
+            &--4 {
+                &:hover {
+                    background-image: url("../images/production/hover/bg4-hover.png");
+                }
+            }
+            &--5 {
+                &:hover {
+                    background-image: url("../images/production/hover/bg5-hover.png");
+                }
+            }
+            &--6 {
+                &:hover {
+                    background-image: url("../images/production/hover/bg6-hover.png");
+                }
+            }
+            @media (max-width: 1367px) {
+                width: 31%;
+                margin-bottom: 20px;
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../images/dots-block-4.png");
+            height: 230px;
+            width: 110px;
+            background-size: cover;
+            top: 20%;
+            right: 30%;
+        }
+    }
+}
+
+.production__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    line-height: 86px;
+    text-transform: uppercase;
+    height: 86px;
+    border: 2px solid $color-blue;
+    transform: rotate(90deg) scale(-1);
+    padding: 0 22px;
+    margin-left: -80px;
+    margin-top: 80px;
+    z-index: 10;
+    background-color: #fff;
+    span {
+        margin-right: 15px;
+    }
+    .line {
+        width: 51px;
+        height: 1px;
+        background-color: $color-text;
+        @media (max-width: 1367px) {
+            width: 40px;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 100%;
+        top: 0;
+        left: -17px;
+        background-color: $color-red;
+    }
+}

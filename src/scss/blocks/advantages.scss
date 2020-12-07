@@ -1,0 +1,92 @@
+.advantages {
+    margin-bottom: 95px;
+}
+
+.advantages__content {
+    display: flex;
+    position: relative;
+    .list {
+        display: flex;
+        justify-content: space-between;
+        flex: 1 0 auto;
+        margin-left: 135px;
+        .item {
+            width: calc(100% / 6);
+            padding: 0 40px;
+            height: 385px;
+            border: 1px solid $color-light-grey;
+            border-left: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &:first-child {
+                border-left: 1px solid $color-light-grey;
+            }
+            @media (max-width: 1367px) {
+                height: 267px;
+                padding: 0 25px;
+            }
+        }
+
+        .item__name {
+            font-weight: 400;
+            font-size: 20px;
+            text-transform: uppercase;
+            @media (max-width: 1367px) {
+                font-size: 16px;
+            }
+        }
+        .item__picture {
+            margin-bottom: 10px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 102px;
+                height: 48px;
+                background-image: url("../images/dots-block-2.png");
+                background-size: cover;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        @media (max-width: 1367px) {
+            margin-left: 100px;
+        }
+    }
+}
+
+.advantages__title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    line-height: 86px;
+    text-transform: uppercase;
+    height: 86px;
+    border: 2px solid $color-blue;
+    transform: rotate(90deg) scale(-1);
+    padding: 0 22px;
+    margin-left: -80px;
+    margin-top: 80px;
+    span {
+        margin-right: 15px;
+    }
+    .line {
+        width: 51px;
+        height: 1px;
+        background-color: $color-text;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 100%;
+        top: 0;
+        left: -17px;
+        background-color: $color-red;
+    }
+    @media (max-width: 1367px) {
+        height: 75px;
+    }
+}
