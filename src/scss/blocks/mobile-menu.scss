@@ -1,0 +1,29 @@
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 284px;
+    height: 490px;
+    background-color: #fff;
+    padding: 65px;
+    z-index: 100;
+    .list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 45px;
+        .item {
+            margin-bottom: 20px;
+            text-align: center;
+            a {
+                text-decoration: none;
+                color: $color-text;
+                text-transform: uppercase;
+                font-family: $font-title;
+            }
+        }
+    }
+    &.active {
+        display: block;
+    }
+}

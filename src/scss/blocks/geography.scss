@@ -1,63 +1,129 @@
 .geography {
-    margin-bottom: 95px;
+    margin-bottom: 165px;
+    @media (max-width: 1367px) {
+        margin-bottom: 90px;
+    }
+    @media (max-width: 1025px) {
+        margin-bottom: 56px;
+    }
+    @media (max-width: 321px) {
+        margin-bottom: 45px;
+    }
 }
 
 .geography__wrapper {
     background-image: url("../images/russia-map.png");
     background-position: top left;
     background-size: contain;
+    display: flex;
+    flex-direction: column;
 }
 
+// .geography__title {
+//     padding: 0 200px;
+//     font-size: 30px;
+//     background-color: #fff;
+//     align-self: center;
+//     display: flex;
+//     align-items: center;
+//     margin-top: -40px;
+//     justify-content: center;
+//     margin-bottom: 50px;
+
+//     span {
+//         line-height: 86px;
+//         height: 86px;
+//         text-transform: uppercase;
+//         padding-left: 23px;
+//         padding-right: 98px;
+//         border: 2px solid $color-blue;
+//         position: relative;
+//         &::before {
+//             content: "";
+//             width: 15px;
+//             height: 100%;
+//             background-color: $color-red;
+//             position: absolute;
+//             left: -17px;
+//             top: 0;
+//         }
+//         &::after {
+//             content: "";
+//             position: absolute;
+//             width: 51px;
+//             height: 1px;
+//             background-color: $color-text;
+//             top: 50%;
+//             right: 20px;
+//             @media (max-width: 1025px) {
+//                 width: 20px;
+//             }
+//         }
+//         @media (max-width: 1367px) {
+//             line-height: 75px;
+//             height: 75px;
+//         }
+//         @media (max-width: 1025px) {
+//             line-height: 53px;
+//             height: 53px;
+//             padding-right: 55px;
+//         }
+//     }
+//     @media (max-width: 1367px) {
+//         font-size: 20px;
+//         margin-bottom: 95px;
+//     }
+//     @media (max-width: 1025px) {
+//         font-size: 16px;
+//         margin-bottom: 50px;
+//     }
+// }
+
 .geography__title {
-    padding: 0 200px;
-    background-color: #fff;
-    align-self: center;
-    display: flex;
-    align-items: center;
-    margin-top: -40px;
-    justify-content: center;
+    margin-bottom: 50px;
     span {
-        line-height: 86px;
-        height: 86px;
-        text-transform: uppercase;
-        padding-left: 23px;
-        padding-right: 98px;
-        border: 2px solid $color-blue;
-        position: relative;
+        @media (max-width: 1025px) {
+            padding-right: 19px;
+        }
+    }
+    @media (max-width: 1367px) {
+        margin-bottom: 95px;
+    }
+    @media (max-width: 1025px) {
+        margin-bottom: 50px;
+    }
+    @media (max-width: 769px) {
         margin-bottom: 40px;
-        &::before {
-            content: "";
-            width: 15px;
-            height: 100%;
-            background-color: $color-red;
-            position: absolute;
-            left: -17px;
-            top: 0;
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            width: 51px;
-            height: 1px;
-            background-color: $color-text;
-            top: 50%;
-            right: 20px;
-        }
+    }
+    @media (max-width: 321px) {
+        margin-bottom: 20px;
     }
 }
 
 .geography__inner {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 321px) {
+        flex-direction: column;
+    }
 }
 
 .geography__col {
     &--1 {
-        max-width: 602px;
-        width: 100%;
-        flex: 1 0 auto;
-        @media (max-width: 1367px) {
-            max-width: 456px;
+        // max-width: 602px;
+        // width: 100%;
+        // flex: 1 0 auto;
+        // @media (max-width: 1367px) {
+        //     max-width: 456px;
+        // }
+        // @media (max-width: 1025px) {
+        //     max-width: 343px;
+        // }
+        // @media (max-width: 769px) {
+        //     max-width: 270px;
+        // }
+        @media (max-width: 321px) {
+            order: 1;
         }
     }
     &--2 {
@@ -66,16 +132,39 @@
         background-repeat: no-repeat;
         max-width: 878px;
         flex: 1 0 auto;
-        height: 478px;
+        height: 476px;
         width: 100%;
-        margin-bottom: 218px;
         padding-top: 54px;
         padding-bottom: 64px;
         padding-left: 25px;
         padding-right: 25px;
         @media (max-width: 1367px) {
-            max-width: 840px;
+            max-width: 685px;
             margin-left: -106px;
+            background-image: url("../images/rectangle-1366.png");
+            padding-top: 71px;
+        }
+        @media (max-width: 1025px) {
+            max-width: 444px;
+            padding: 40px;
+            padding-right: 20px;
+            padding-bottom: 60px;
+            height: 354px;
+            background-image: url("../images/rectangle-1024.png");
+        }
+        @media (max-width: 769px) {
+            max-width: 384px;
+            padding: 15px;
+            padding-top: 39px;
+            padding-bottom: 50px;
+            background-image: url("../images/rectangle-768.png");
+        }
+        @media (max-width: 321px) {
+            background-image: none;
+            order: 0;
+            margin-left: 0;
+            height: auto;
+            padding: 0;
         }
     }
 }
@@ -94,12 +183,35 @@
             display: block;
         }
         @media (max-width: 1367px) {
-            font-size: 30px;
+            font-size: 26px;
+        }
+        @media (max-width: 1025px) {
+            font-size: 20px;
+        }
+        @media (max-width: 769px) {
+            line-height: 1.4;
+        }
+        @media (max-width: 321px) {
+            font-size: 14px;
+            padding: 0 20px;
+            margin-bottom: 23px;
         }
     }
-
-    @media (max-width: 1367px) {
-        margin-left: 120px;
+    p {
+        @media (max-width: 1367px) {
+            margin-left: 40px;
+        }
+        @media (max-width: 1025px) {
+            font-size: 14px;
+            margin-left: 0;
+        }
+        @media (max-width: 769px) {
+            margin-left: 0;
+            max-width: 210px;
+        }
+        @media (max-width: 321px) {
+            display: none;
+        }
     }
 }
 
@@ -116,14 +228,30 @@
     &::before {
         content: "1 500";
         width: 400px;
-        color: transparent;
+        color: $color-light-grey;
         font-size: 100px;
         position: absolute;
         font-family: $font-title;
         left: 10px;
         bottom: 10px;
-        -webkit-text-stroke: 1px #000;
         z-index: -1;
+        @media (max-width: 1025px) {
+            font-size: 57px;
+        }
+    }
+    @media (max-width: 1367px) {
+        margin-left: 40px;
+        font-size: 36px;
+    }
+    @media (max-width: 1025px) {
+        font-size: 36px;
+        margin-left: 0;
+    }
+    @media (max-width: 769px) {
+        margin-left: 0;
+    }
+    @media (max-width: 321px) {
+        display: none;
     }
 }
 
@@ -131,6 +259,12 @@
     position: relative;
     width: 100%;
     margin-top: 130px;
+    display: flex;
+    margin-left: 60px;
+    // max-width: 602px;
+    // height: 602px;
+    // width: 100%;
+    // flex: 1 0 auto;
     &::before {
         content: "";
         position: absolute;
@@ -142,7 +276,39 @@
         left: -100px;
         z-index: -1;
     }
+    & + p.mobile {
+        display: none;
+        @media (max-width: 321px) {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            padding: 0 35px;
+        }
+    }
     @media (max-width: 1367px) {
-        margin-top: 98px;
+        margin-top: 80px;
+        margin-left: 0;
+    }
+    @media (max-width: 1025px) {
+        margin-top: 40px;
+    }
+
+    @media (max-width: 1367px) {
+        max-width: 429px;
+        height: 482px;
+    }
+    @media (max-width: 1025px) {
+        max-width: 343px;
+        height: 384px;
+    }
+    @media (max-width: 769px) {
+        max-width: 270px;
+        height: 302px;
+        margin-top: 75px;
+    }
+    @media (max-width: 321px) {
+        margin-top: 0;
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 }

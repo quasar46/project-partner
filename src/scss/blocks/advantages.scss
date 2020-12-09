@@ -1,15 +1,26 @@
 .advantages {
     margin-bottom: 95px;
+    @media (max-width: 1367px) {
+        margin-bottom: 72px;
+    }
+    @media (max-width: 1025px) {
+        margin-bottom: 83px;
+    }
+    @media (max-width: 769px) {
+        margin-bottom: 64px;
+    }
 }
 
 .advantages__content {
+    position: relative;
     display: flex;
+    justify-content: flex-end;
     position: relative;
     .list {
         display: flex;
         justify-content: space-between;
         flex: 1 0 auto;
-        margin-left: 135px;
+        max-width: 1584px;
         .item {
             width: calc(100% / 6);
             padding: 0 40px;
@@ -26,6 +37,20 @@
                 height: 267px;
                 padding: 0 25px;
             }
+            @media (max-width: 1025px) {
+                width: calc(100% / 3);
+                height: 145px;
+                padding-left: 48px;
+                padding-left: 24px;
+            }
+            @media (max-width: 321px) {
+                width: auto;
+                padding: 0 10px;
+                margin: 0 4px;
+                height: 140px;
+                justify-content: flex-start;
+                padding-top: 10px;
+            }
         }
 
         .item__name {
@@ -35,10 +60,25 @@
             @media (max-width: 1367px) {
                 font-size: 16px;
             }
+            @media (max-width: 1025px) {
+                font-size: 14px;
+            }
+            @media (max-width: 321px) {
+                text-align: center;
+            }
         }
         .item__picture {
             margin-bottom: 10px;
             position: relative;
+            img {
+                height: 60px;
+                @media (max-width: 1367px) {
+                    height: 50px;
+                }
+                @media (max-width: 1025px) {
+                    height: 40px;
+                }
+            }
 
             &::before {
                 content: "";
@@ -49,17 +89,43 @@
                 background-size: cover;
                 right: 0;
                 bottom: 0;
+                z-index: -1;
+                @media (max-width: 1025px) {
+                    right: 45px;
+                }
+            }
+            @media (max-width: 321px) {
+                display: flex;
+                justify-content: center;
             }
         }
         @media (max-width: 1367px) {
-            margin-left: 100px;
+            max-width: 1067px;
         }
+        @media (max-width: 1025px) {
+            flex-wrap: wrap;
+            flex: 0 1 auto;
+            max-width: 753px;
+        }
+        @media (max-width: 769px) {
+            max-width: 594px;
+        }
+        @media (max-width: 321px) {
+            max-width: 100%;
+            display: block;
+            // margin: 0 -4px;
+            justify-content: space-between;
+        }
+    }
+    @media (max-width: 321px) {
+        justify-content: normal;
     }
 }
 
 .advantages__title {
     position: absolute;
     display: flex;
+    font-size: 30px;
     align-items: center;
     line-height: 86px;
     text-transform: uppercase;
@@ -67,8 +133,10 @@
     border: 2px solid $color-blue;
     transform: rotate(90deg) scale(-1);
     padding: 0 22px;
-    margin-left: -80px;
-    margin-top: 80px;
+    top: 119px;
+    left: -119px;
+    z-index: 10;
+    background-color: #fff;
     span {
         margin-right: 15px;
     }
@@ -76,6 +144,12 @@
         width: 51px;
         height: 1px;
         background-color: $color-text;
+        @media (max-width: 1367px) {
+            width: 40px;
+        }
+        @media (max-width: 1025px) {
+            width: 20px;
+        }
     }
     &::before {
         content: "";
@@ -87,6 +161,25 @@
         background-color: $color-red;
     }
     @media (max-width: 1367px) {
+        font-size: 20px;
+        line-height: 75px;
         height: 75px;
+        top: 84px;
+        left: -84px;
+    }
+    @media (max-width: 1025px) {
+        line-height: 53px;
+        height: 53px;
+        font-size: 16px;
+        top: 71px;
+        left: -71px;
+    }
+    @media (max-width: 321px) {
+        transform: none;
+        top: -73px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 40px;
+        line-height: 40px;
     }
 }

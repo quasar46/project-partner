@@ -1,7 +1,22 @@
 .change-language {
     display: flex;
-}
-
-.button {
-    display: flex;
+    .btn1 {
+        padding: 0 10px;
+    }
+    .btn1:not(.active) {
+        border: 0;
+        background: none;
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+    @media (max-width: 1025px) {
+        display: none;
+        &--mode {
+            display: flex;
+            justify-content: center;
+            margin-top: 45px;
+        }
+    }
 }

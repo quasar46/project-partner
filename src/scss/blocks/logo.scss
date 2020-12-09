@@ -3,8 +3,16 @@
     width: 100%;
     margin-right: 126px;
     flex: 1 0 auto;
+    position: relative;
+    z-index: 10;
     @media (max-width: 1367px) {
-        max-width: 127px;
+        max-width: 76px;
         margin-right: 25px;
+    }
+    @media (max-width: 1025px) {
+        max-width: 71px;
+    }
+    @media(max-width: 321px) {
+        max-width: 57px;
     }
 }

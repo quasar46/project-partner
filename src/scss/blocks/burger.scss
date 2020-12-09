@@ -1,0 +1,30 @@
+.burger {
+    display: none;
+    position: relative;
+    z-index: 200;
+    width: 34px;
+    height: 20px;
+    background-image: url("../images/svg/burger.svg");
+    background-size: cover;
+    svg {
+        path {
+            @media (max-width: 321px) {
+                fill: #fff;
+            }
+        }
+    }
+    &.active {
+        background-image: url("../images/svg/burger-cross.svg");
+        width: 16px;
+        height: 16px;
+    }
+    @media (max-width: 1025px) {
+        display: block;
+    }
+    @media (max-width: 321px) {
+        background-image: url("../images/svg/burger-mobile.svg");
+        &.active {
+            background-image: url("../images/svg/burger-cross-mobile.svg");
+        }
+    }
+}

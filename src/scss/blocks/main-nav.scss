@@ -9,6 +9,9 @@
             @media (max-width: 1367px) {
                 margin-right: 15px;
             }
+            @media (max-width: 1025px) {
+                margin-right: 22px;
+            }
         }
         a {
             font-family: $font-title;
@@ -19,6 +22,12 @@
             &:hover {
                 border-bottom: 2px solid $color-red;
             }
+            @media (max-width: 1025px) {
+                font-size: 14px;
+            }
         }
+    }
+    @media (max-width: 1025px) {
+        display: none;
     }
 }
