@@ -1,0 +1,22 @@
+.main-catalog-content {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    .title {
+        align-self: center;
+        color: $color-blue;
+        font-weight: normal;
+        font-family: $font-title;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+        font-size: 24px;
+        font-weight: 500;
+        @media (max-width: 1365px) {
+            font-size: 18px;
+            margin-bottom: 33px;
+        }
+        @media(max-width: 769px) {
+            display: none;
+        }
+    }
+}

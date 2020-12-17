@@ -1,0 +1,106 @@
+.news-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 145px;
+    padding-bottom: 75px;
+    @media (max-width: 1365px) {
+        padding: 0;
+        flex-direction: column;
+        margin-bottom: 45px;
+    }
+}
+
+.news-wrapper__col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    // max-width: 676px;
+    width: 50%;
+    &:first-child {
+        margin-right: 77px;
+        @media (max-width: 769px) {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+    picture {
+        display: flex;
+        height: 376px;
+        margin-bottom: 30px;
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+        @media (max-width: 1366px) {
+            margin-bottom: 25px;
+        }
+        @media(max-width: 767px) {
+            height: 158px;
+        }
+        @media (max-width: 321px) {
+            height: 158px;
+        }
+    }
+    @media (max-width: 1365px) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.news-wrapper__name {
+    font-size: 20px;
+    font-family: $font-title;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 130px;
+        height: 1px;
+        background-color: $color-red;
+        left: 0;
+        bottom: 0;
+    }
+    @media (max-width: 769px) {
+        font-size: 16px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 321px) {
+        font-size: 14px;
+    }
+}
+
+.news-wrapper__content {
+    margin-bottom: 10px;
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        color: $color-grey;
+        @media (max-width: 321px) {
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 769px) {
+        margin-bottom: 20px;
+    }
+}
+
+.news-wrapper__footer {
+    display: flex;
+    justify-content: space-between;
+    // align-items: flex-end;
+    align-items: center;
+    margin-top: auto;
+    .date {
+        display: flex;
+        align-items: center;
+    }
+    .date__picture {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+}

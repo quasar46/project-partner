@@ -1,0 +1,45 @@
+.news-cart-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 145px;
+    .title {
+        font-family: $font-title;
+        font-weight: 500;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .date {
+        display: flex;
+        margin-bottom: 35px;
+    }
+    .date__picture {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        span {
+            font-weight: 400;
+            color: $color-grey;
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 1023px) {
+        padding: 0;
+    }
+}
+
+.news-cart-wrapper__content {
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-grey;
+    margin-bottom: 55px;
+}
+
+.news-cart-wrapper__pictures {
+    display: flex;
+    justify-content: space-between;
+    picture {
+        &:first-child {
+            margin-right: 25px;
+        }
+    }
+}

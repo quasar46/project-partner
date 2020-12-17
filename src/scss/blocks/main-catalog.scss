@@ -1,0 +1,83 @@
+.main-catalog {
+    display: flex;
+    padding-bottom: 75px;
+    padding-top: 78px;
+    @media (max-width: 1919px) {
+        padding-top: 27px;
+    }
+    @media (max-width: 1365px) {
+        padding-bottom: 50px;
+    }
+    @media (max-width: 1023px) {
+        flex-direction: column;
+    }
+    @media (max-width: 767px) {
+        padding-top: 37px;
+    }
+}
+
+.main-catalog-filter__title-planshet {
+    @media (max-width: 1023px) {
+        display: flex;
+        padding-top: 20px;
+        margin-bottom: 25px;
+        font-weight: 400;
+        font-family: $font-title;
+        font-size: 14px;
+        text-transform: uppercase;
+        .picture {
+            margin-right: 7px;
+        }
+    }
+}
+
+.main-catalog__table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1 0 auto;
+    margin-bottom: 25px;
+    .item {
+        display: flex;
+        .row {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 400;
+            flex: 0 1 auto;
+            width: 100%;
+            padding: 0 30px;
+            min-height: 60px;
+            outline: 1px solid $color-light-grey;
+            &__title {
+                max-width: 304px;
+                font-family: $font-title;
+                text-transform: uppercase;
+                font-weight: 500;
+                width: 100%;
+                flex: 1 0 auto;
+                @media (max-width: 1365px) {
+                    max-width: 210px;
+                }
+                @media (max-width: 767px) {
+                    max-width: 100%;
+                }
+            }
+            @media (max-width: 1365px) {
+                padding: 0 20px;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+            @media (max-width: 767px) {
+                justify-content: center;
+                padding: 20px;
+            }
+        }
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}

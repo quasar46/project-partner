@@ -1,0 +1,19 @@
+#modal.modal
+    .modal__wrapper
+        .modal__inner
+            .cross
+                img(src="images/svg/burger-cross.svg", alt="")
+            h2.title СВЯЖИТЕСЬ С НАМИ
+            h3.subtitle Заполните форму и напишите интересующие Вас вопросы
+            form.modal__form(action="")
+                .modal__inputs
+                    input(type="text" placeholder="Ваше имя")
+                    input(type="text" placeholder="Ваш телефон")
+                    input(type="text" placeholder="Email")
+                textarea(placeholder="Сообщение")
+            .modal__footer
+                .modal__accept
+                    input(type="checkbox" id="check1")
+                    label(for="check1") я принимаю условия <a href="">пользовательского соглашения</a> и <a href="">политику конфиденциальности</a>
+                .modal__submit
+                    button.btn1 Отправить

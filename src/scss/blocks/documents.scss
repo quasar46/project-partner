@@ -1,0 +1,8 @@
+.documents {
+    display: flex;
+    flex-direction: column;
+    padding-top: 87px;
+    @media (max-width: 1919px) {
+        padding-top: 27px;
+    }
+}

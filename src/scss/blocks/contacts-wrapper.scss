@@ -1,0 +1,6 @@
+.contacts-wrapper {
+    padding-bottom: 55px;
+    @media(max-width: 769px) {
+        padding-bottom: 30px;
+    }
+}

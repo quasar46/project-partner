@@ -8,7 +8,7 @@
     background-size: cover;
     svg {
         path {
-            @media (max-width: 321px) {
+            @media (max-width: 767px) {
                 fill: #fff;
             }
         }
@@ -18,11 +18,11 @@
         width: 16px;
         height: 16px;
     }
-    @media (max-width: 1025px) {
+    @media (max-width: 1365px) {
         display: block;
     }
-    @media (max-width: 321px) {
-        background-image: url("../images/svg/burger-mobile.svg");
+    @media (max-width: 767px) {
+        // background-image: url("../images/svg/burger-mobile.svg");
         &.active {
             background-image: url("../images/svg/burger-cross-mobile.svg");
         }

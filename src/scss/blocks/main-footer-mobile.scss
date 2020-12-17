@@ -1,6 +1,6 @@
 .main-footer-mobile {
     display: none;
-    @media (max-width: 321px) {
+    @media (max-width: 767px) {
         display: flex;
         flex-direction: column;
         .list {
@@ -21,20 +21,20 @@
                             }
                         }
                     }
-                    @media (max-width: 321px) {
+                    @media (max-width: 767px) {
                         align-self: center;
                     }
                 }
 
                 a {
-                    @media (max-width: 321px) {
+                    @media (max-width: 767px) {
                         font-size: 14px;
                         font-family: $font-title;
                         color: $color-text;
                         text-decoration: none;
                     }
                 }
-                @media (max-width: 321px) {
+                @media (max-width: 767px) {
                     text-align: center;
                     margin-bottom: 13px;
                     flex-direction: column;
@@ -51,7 +51,7 @@
                     margin-right: 10px;
                 }
             }
-            @media (max-width: 321px) {
+            @media (max-width: 767px) {
                 margin-top: 20px;
                 align-self: center;
             }
@@ -75,6 +75,11 @@
     color: $color-grey;
     text-align: center;
     font-size: 14px;
+    p {
+        @media(max-width: 767px) {
+            margin-bottom: 5px;
+        }
+    }
     a {
         color: $color-grey;
     }

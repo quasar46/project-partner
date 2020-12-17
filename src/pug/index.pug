@@ -7,12 +7,10 @@ html(lang="ru")
 			include modules/header.pug
 
 			main
-
+				include modules/modal.pug
 				//- hero
 				section.hero
 					picture.hero__picture
-						//- picture
-						//- source(media="(max-width: 1367px)" srcset="images/hero-1366.jpg")
 						img(src="images/hero.jpg" alt="")
 					.container
 						.hero__content
@@ -20,7 +18,7 @@ html(lang="ru")
 								img(src="images/project.png" alt="")
 							h2.title НАША МИССИЯ
 							p.hero__text Создавать качественную безопасную полиграфическую упаковку, которая не только защитит и сохранит продукт, но и поспособствует продвижению брендов наших Клиентов на рынке. 
-							button.btn1 Связаться с нами
+							button.btn1.contact-us Связаться с нами
 
 				//- production
 				section.production
@@ -151,9 +149,9 @@ html(lang="ru")
 								span География рынка
 							.geography__inner
 								.geography__col.geography__col--1
-									picture.geography__map
-										//- source(srcset="images/territory-1366.png" media="(max-width: 1367px)")
-										img(src="images/territory.png" alt="")
+									a(data-fancybox="gallery" href="images/territory.png")
+										picture.geography__map
+											img(src="images/territory.png" alt="")
 									p.mobile География рынка сбыта компании - в радиусе 1500 км. от Курска
 								.geography__col.geography__col--2
 									.geography__content

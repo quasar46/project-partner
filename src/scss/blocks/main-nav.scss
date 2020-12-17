@@ -6,10 +6,10 @@
             &:last-child {
                 margin-right: 0;
             }
-            @media (max-width: 1367px) {
+            @media (max-width: 1919px) {
                 margin-right: 15px;
             }
-            @media (max-width: 1025px) {
+            @media (max-width: 1365px) {
                 margin-right: 22px;
             }
         }
@@ -22,12 +22,12 @@
             &:hover {
                 border-bottom: 2px solid $color-red;
             }
-            @media (max-width: 1025px) {
+            @media (max-width: 1365px) {
                 font-size: 14px;
             }
         }
     }
-    @media (max-width: 1025px) {
+    @media (max-width: 1365px) {
         display: none;
     }
 }

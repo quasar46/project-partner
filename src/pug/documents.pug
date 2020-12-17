@@ -1,0 +1,47 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head.pug
+    body
+        .content
+            include modules/header.pug
+
+            main
+                include modules/modal.pug
+                //-documents
+                section.documents
+                    .container
+                        h2.inner-title Документы
+                        ul.documents-list
+                            li
+                                img(src="images/documents/item1.jpg" alt="")
+                            li
+                                img(src="images/documents/item2.jpg" alt="")
+                            li
+                                img(src="images/documents/item3.jpg" alt="")
+                            li
+                                img(src="images/documents/item4.jpg" alt="")
+
+                        ul.documents-list
+                            li
+                                img(src="images/documents/item5.jpg" alt="")
+                            li
+                                img(src="images/documents/item6.jpg" alt="")
+                            li
+                                img(src="images/documents/item7.jpg" alt="")
+
+                        ul.documents-list
+                            li
+                                img(src="images/documents/item8.jpg" alt="")
+                            li
+                                img(src="images/documents/item9.jpg" alt="")
+                            li
+                                img(src="images/documents/item10.jpg" alt="")
+                            li
+                                img(src="images/documents/item11.jpg" alt="")
+                            li
+                                img(src="images/documents/item12.jpg" alt="")
+
+        include modules/footer.pug
+        //- include modules/menu-mobile.pug
+        include modules/script.pug

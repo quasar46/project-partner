@@ -1,0 +1,196 @@
+.main-catalog-filter {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 412px;
+    padding-right: 30px;
+    margin-right: 50px;
+
+    .inner-title {
+        margin-bottom: 35px;
+        @media(max-width: 1365px) {
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width: 1365px) {
+        max-width: 264px;
+        margin-right: 18px;
+        padding-right: 0;
+    }
+}
+
+.main-catalog-filter__main-list {
+    .wrapper {
+        padding-top: 5px;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        border-top: #f5f5f5;
+
+        &.active {
+            .item__title {
+                color: $color-red;
+            }
+
+            .arrow {
+                transform: rotate(180deg);
+
+                svg {
+                    path {
+                        stroke: $color-red;
+                    }
+                }
+            }
+        }
+    }
+
+    .item__content {
+        display: flex;
+        align-items: center;
+        padding: 25px 0;
+        cursor: pointer;
+
+        .picture {
+            max-width: 50px;
+            width: 100%;
+        }
+
+        .item__title {
+            display: flex;
+            font-size: 20px;
+            font-family: $font-title;
+            font-weight: 400;
+            color: $color-grey;
+            text-decoration: none;
+            @media (max-width: 1365px) {
+                font-size: 16px;
+            }
+            @media (max-width: 1023px) {
+                font-size: 14px;
+            }
+        }
+
+        .arrow {
+            margin-left: auto;
+            max-width: 16px;
+        }
+        @media(max-width: 1365px) {
+            padding: 20px 0;
+        }
+    }
+    @media (max-width: 1023px) {
+        display: none;
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding-top: 80px;
+        padding-bottom: 160px;
+        z-index: 90000;
+        .wrapper {
+            display: block;
+            max-width: 400px;
+            margin: 0 auto;
+            overflow: scroll;
+            height: 510px;
+            @media(max-width: 1023px) {
+                padding-right: 20px;
+            }
+            @media (max-width: 767px) {
+                padding: 0 20px;
+            }
+        }
+    }
+    &.active {
+        display: block;
+    }
+}
+
+.main-catalog-filter__sublist {
+    display: none;
+
+    .item__subtitle {
+        color: $color-blue;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: $font-title;
+        font-weight: 400;
+        padding-left: 20px;
+        @media (max-width: 1365px) {
+            font-size: 14px;
+        }
+        @media (max-width: 767px) {
+            padding-left: 0;
+        }
+    }
+
+    .item__sublist {
+        display: flex;
+        padding: 31px 0;
+        cursor: pointer;
+        .arrow-sublist {
+            margin-left: auto;
+        }
+        &.active {
+            .arrow-sublist {
+                transform: rotate(180deg);
+            }
+        }
+        @media(max-width: 1365px) {
+            padding: 20px 0;
+        }
+    }
+}
+
+.main-catalog-filter__subsublist {
+    display: none;
+}
+.item__subsublist {
+    padding: 20px 0;
+    padding-left: 50px;
+    span {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $font-title;
+        position: relative;
+        cursor: pointer;
+        &::before {
+            content: "";
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            width: 10px;
+            height: 1px;
+            background-image: url("../images/dash.png");
+            background-size: cover;
+        }
+    }
+    &:hover {
+        span {
+            color: $color-red;
+            &::before {
+                background-image: url("../images/dash-active.png");
+            }
+        }
+    }
+    @media(max-width: 1365px) {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+}
+
+.main-catalog-filter__cross {
+    @media (max-width: 1023px) {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 53px;
+        width: 23px;
+        height: 23px;
+    }
+    @media (max-width: 767px) {
+        left: 20px;
+        top: 30px;
+    }
+}

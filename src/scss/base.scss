@@ -24,10 +24,28 @@ body {
 	width: 100%;
 	padding: 0 100px;
 	margin: 0 auto;
-	@media (max-width: 769px) {
+	@media (max-width: 1023px) {
 		padding: 0 50px;
 	}
-	@media (max-width: 321px) {
+	@media (max-width: 767px) {
+		padding: 0 20px;
+		max-width: 320px;
+		margin:0 auto;
+	}
+}
+
+.container-2 {
+	position: relative;
+	max-width: 1920px;
+	width: 100%;
+	padding: 0 100px;
+	margin: 0 auto;
+	@media (max-width: 1919px) {
+		max-width: 768px;
+		padding: 0 50px;
+	}
+	@media (max-width: 767px) {
+		max-width: 320px;
 		padding: 0 20px;
 	}
 }

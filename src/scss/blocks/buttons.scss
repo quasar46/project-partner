@@ -34,7 +34,26 @@
         width: 80%;
         height: 2px;
     }
-    @media (max-width: 1025px) {
+    &:hover {
+        background: linear-gradient(
+            45deg,
+            $color-blue 0px,
+            $color-blue 10px,
+            transparent 0%,
+            transparent calc(100% - 10px),
+            $color-blue calc(100% - 10px)
+        );
+        background-origin: border-box;
+        &::after {
+            width: 100%;
+            transition: 0.3s;
+        }
+        &::before {
+            height: 100%;
+            transition: 0.3s;
+        }
+    }
+    @media (max-width: 1365px) {
         height: 40px;
         line-height: 40px;
         font-size: 14px;
@@ -43,11 +62,11 @@
 
 .btn1--more {
     display: none;
-    @media (max-width: 769px) {
+    @media (max-width: 1023px) {
         display: block;
         align-self: center;
     }
-    @media (max-width: 321px) {
+    @media (max-width: 767px) {
         font-size: 0;
         background: none;
         border-color: $color-blue;
@@ -66,7 +85,7 @@
 .btn1--news {
     align-self: flex-start;
     margin-top: auto;
-    @media (max-width: 1025px) {
+    @media (max-width: 1365px) {
         display: none;
     }
 }
